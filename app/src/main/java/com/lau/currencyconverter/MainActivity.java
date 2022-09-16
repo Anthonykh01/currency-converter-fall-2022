@@ -3,6 +3,7 @@ package com.lau.currencyconverter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     EditText lbp_rate;
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
         lbp_rate=(EditText) findViewById(R.id.lbp_rate);
         usd_rate=(EditText) findViewById(R.id.usd_rate);
     }
+    public void Pressed_button(View v) {
 
+    }
 
 }
