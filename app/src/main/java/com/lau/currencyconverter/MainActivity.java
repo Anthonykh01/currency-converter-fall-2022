@@ -3,7 +3,16 @@ package com.lau.currencyconverter;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
+import android.os.Bundle;
+import android.widget.EditText;
+import android.widget.Toast;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText lbp_rate;
@@ -31,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
             int result=Integer.parseInt(usd_input)*40000;
             Toast toast=Toast.makeText(getApplicationContext(),"the equivalent to this amount in lbp is :"+result, Toast.LENGTH_LONG);
             toast.show();
+        }
+        else if(lbp_input!=null&&usd_input!=null)
+        {
+
+            Toast toast=Toast.makeText(getApplicationContext(),"Invalid input please fill only one of the boxes ", Toast.LENGTH_LONG);
+            toast.show();
+
         }
     }
 
